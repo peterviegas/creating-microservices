@@ -18,6 +18,9 @@ public class PedidoController {
 	
 	@PostMapping
 	public ResponseEntity<Pedido> criarPedido(@RequestBody Pedido pedido){
+		logger.info("Pedido recebido request: {}", pedido);
+
+		
 		logger.info("Pedido recebido:{}", pedido.toString());
 		return ResponseEntity.status(HttpStatus.CREATED).body(pedido);
 	}
