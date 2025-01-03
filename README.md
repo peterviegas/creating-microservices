@@ -17,12 +17,19 @@ Before starting, ensure you have the following tools installed:
 
 ### Installation and Setup
 1 - Clone the Repository:
+```
+git clone https://github.com/your-username/microservice-orders-rabbitmq.git
+cd microservice-orders-rabbitmq
+```
+
 2 - Set up RabbitMQ:
 3- Configure Application:
-´´´´ spring:
+```
+ spring:
   rabbitmq:
     host: localhost
     port: 5672
     username: guest
     password: guest 
-    ´´´´
+    ```
+
