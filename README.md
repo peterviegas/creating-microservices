@@ -87,5 +87,55 @@ Once the application is running, the OpenAPI documentation will be available at:
 The generated Swagger UI provides an interactive interface to explore and test API endpoints.
 ![image](https://github.com/user-attachments/assets/58b3556a-769f-4d18-a0ab-c4d152e0a27f)
 
+## Configuration Docker and RabbitMQ
+### Docker
+- Premise: you need to have Ubuntu installed.
+- Open Ubunt in the WSL
+```
+wsl
+```
+- Install the package:
+Git
+```
+sudo apt install git -y
+```
+Node.js and NPM
+```
+sudo apt install nodejs npm -y
+```
+Java (If necessary)
+```
+sudo apt install openjdk-11-jdk -y
+```
+Basic Tools
+```
+sudo apt install build-essential curl -y
+```
+
+### Verification Docker Login CLI
+Certified docker login
+```
+docker login -u <seu-username> -p <seu-token> or passord
+```
+```
+docker login
+```
+
+Download the image manually
+```
+docker pull rabbitmq:3.10.5-management
+```
+Execute
+```
+docker compose up
+```
+
+### RabbitMQ
+```
+http://localhost:15672/
+```
+![image](https://github.com/user-attachments/assets/592f05e9-88d1-4276-9b66-81e21a307f45)
+
+![image](https://github.com/user-attachments/assets/ccbcb716-b0f5-425f-b308-066881f16988)
 
 
